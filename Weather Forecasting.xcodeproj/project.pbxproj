@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90F7B2392296FFA000580563 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B2382296FFA000580563 /* AppDelegate.swift */; };
+		90F7B23B2296FFA000580563 /* TodayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B23A2296FFA000580563 /* TodayController.swift */; };
+		90F7B23E2296FFA000580563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F7B23C2296FFA000580563 /* Main.storyboard */; };
+		90F7B2402296FFA200580563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F7B23F2296FFA200580563 /* Assets.xcassets */; };
+		90F7B2432296FFA200580563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F7B2412296FFA200580563 /* LaunchScreen.storyboard */; };
+		90F7B25622972D3100580563 /* headerViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F7B25422972D3000580563 /* headerViewTableViewCell.xib */; };
+		90F7B25722972D3100580563 /* headerViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B25522972D3000580563 /* headerViewTableViewCell.swift */; };
+		90F7B25A22972D7C00580563 /* ForeCastingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B25922972D7C00580563 /* ForeCastingController.swift */; };
+		90F7B25E229737B700580563 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B25D229737B700580563 /* Constant.swift */; };
+		90F7B26122973ADE00580563 /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B26022973ADE00580563 /* DBProvider.swift */; };
+		90F7B26422973B7100580563 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B26322973B7100580563 /* WebService.swift */; };
+		90F7B28022973BA600580563 /* JKSubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B26822973BA600580563 /* JKSubtitleView.swift */; };
+		90F7B28122973BA600580563 /* JKNotificationPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B26922973BA600580563 /* JKNotificationPanel.swift */; };
+		90F7B28222973BA600580563 /* JKDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B26A22973BA600580563 /* JKDefaultView.swift */; };
+		90F7B28322973BA600580563 /* success-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F7B26C22973BA600580563 /* success-icon@2x.png */; };
+		90F7B28422973BA600580563 /* success-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F7B26D22973BA600580563 /* success-icon@3x.png */; };
+		90F7B28522973BA600580563 /* warning-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F7B26E22973BA600580563 /* warning-icon@2x.png */; };
+		90F7B28622973BA600580563 /* warning-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F7B26F22973BA600580563 /* warning-icon@3x.png */; };
+		90F7B28722973BA600580563 /* fail-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F7B27022973BA600580563 /* fail-icon@3x.png */; };
+		90F7B28822973BA600580563 /* fail-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F7B27122973BA600580563 /* fail-icon@2x.png */; };
+		90F7B28922973BA600580563 /* UIImage+KVNImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B27322973BA600580563 /* UIImage+KVNImageEffects.m */; };
+		90F7B28A22973BA600580563 /* KVNProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B27622973BA600580563 /* KVNProgress.m */; };
+		90F7B28B22973BA600580563 /* KVNProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F7B27722973BA600580563 /* KVNProgressView.xib */; };
+		90F7B28C22973BA600580563 /* KVNProgressConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B27822973BA600580563 /* KVNProgressConfiguration.m */; };
+		90F7B28D22973BA600580563 /* KVNRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B27922973BA600580563 /* KVNRotationViewController.m */; };
+		90F7B28E22973BA600580563 /* UIImage+KVNEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B27A22973BA600580563 /* UIImage+KVNEmpty.m */; };
+		90F7B28F22973BA600580563 /* UIColor+KVNContrast.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B27D22973BA600580563 /* UIColor+KVNContrast.m */; };
+		90F7B2932297420300580563 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7B2922297420300580563 /* List.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		90F7B2352296FFA000580563 /* Weather Forecasting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Forecasting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F7B2382296FFA000580563 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90F7B23A2296FFA000580563 /* TodayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayController.swift; sourceTree = "<group>"; };
+		90F7B23D2296FFA000580563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90F7B23F2296FFA200580563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90F7B2422296FFA200580563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		90F7B2442296FFA200580563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F7B25422972D3000580563 /* headerViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = headerViewTableViewCell.xib; sourceTree = "<group>"; };
+		90F7B25522972D3000580563 /* headerViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = headerViewTableViewCell.swift; sourceTree = "<group>"; };
+		90F7B25922972D7C00580563 /* ForeCastingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeCastingController.swift; sourceTree = "<group>"; };
+		90F7B25D229737B700580563 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		90F7B26022973ADE00580563 /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
+		90F7B26322973B7100580563 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		90F7B26822973BA600580563 /* JKSubtitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKSubtitleView.swift; sourceTree = "<group>"; };
+		90F7B26922973BA600580563 /* JKNotificationPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKNotificationPanel.swift; sourceTree = "<group>"; };
+		90F7B26A22973BA600580563 /* JKDefaultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKDefaultView.swift; sourceTree = "<group>"; };
+		90F7B26C22973BA600580563 /* success-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success-icon@2x.png"; sourceTree = "<group>"; };
+		90F7B26D22973BA600580563 /* success-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success-icon@3x.png"; sourceTree = "<group>"; };
+		90F7B26E22973BA600580563 /* warning-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning-icon@2x.png"; sourceTree = "<group>"; };
+		90F7B26F22973BA600580563 /* warning-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning-icon@3x.png"; sourceTree = "<group>"; };
+		90F7B27022973BA600580563 /* fail-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fail-icon@3x.png"; sourceTree = "<group>"; };
+		90F7B27122973BA600580563 /* fail-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fail-icon@2x.png"; sourceTree = "<group>"; };
+		90F7B27322973BA600580563 /* UIImage+KVNImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KVNImageEffects.m"; sourceTree = "<group>"; };
+		90F7B27422973BA600580563 /* UIImage+KVNEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVNEmpty.h"; sourceTree = "<group>"; };
+		90F7B27522973BA600580563 /* UIColor+KVNContrast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KVNContrast.h"; sourceTree = "<group>"; };
+		90F7B27622973BA600580563 /* KVNProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVNProgress.m; sourceTree = "<group>"; };
+		90F7B27722973BA600580563 /* KVNProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVNProgressView.xib; sourceTree = "<group>"; };
+		90F7B27822973BA600580563 /* KVNProgressConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVNProgressConfiguration.m; sourceTree = "<group>"; };
+		90F7B27922973BA600580563 /* KVNRotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVNRotationViewController.m; sourceTree = "<group>"; };
+		90F7B27A22973BA600580563 /* UIImage+KVNEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KVNEmpty.m"; sourceTree = "<group>"; };
+		90F7B27B22973BA600580563 /* UIImage+KVNImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVNImageEffects.h"; sourceTree = "<group>"; };
+		90F7B27C22973BA600580563 /* KVNProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVNProgress.h; sourceTree = "<group>"; };
+		90F7B27D22973BA600580563 /* UIColor+KVNContrast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KVNContrast.m"; sourceTree = "<group>"; };
+		90F7B27E22973BA600580563 /* KVNProgressConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVNProgressConfiguration.h; sourceTree = "<group>"; };
+		90F7B27F22973BA600580563 /* KVNRotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVNRotationViewController.h; sourceTree = "<group>"; };
+		90F7B29022973BFF00580563 /* Weather Forecasting-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weather Forecasting-Bridging-Header.h"; sourceTree = "<group>"; };
+		90F7B2922297420300580563 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90F7B2322296FFA000580563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90F7B22C2296FFA000580563 = {
+			isa = PBXGroup;
+			children = (
+				90F7B2372296FFA000580563 /* Weather Forecasting */,
+				90F7B2362296FFA000580563 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90F7B2362296FFA000580563 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B2352296FFA000580563 /* Weather Forecasting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90F7B2372296FFA000580563 /* Weather Forecasting */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B291229741F100580563 /* Model */,
+				90F7B25F22973ACC00580563 /* DBProvider */,
+				90F7B26222973B7100580563 /* WebService */,
+				90F7B25C2297379300580563 /* Constant */,
+				90F7B24E2297002500580563 /* Appdelegate */,
+				90F7B24D2296FFEE00580563 /* Assets */,
+				90F7B24C2296FFE700580563 /* View */,
+				90F7B24B2296FFD400580563 /* SupportingFiles */,
+				90F7B26522973BA600580563 /* Spinner */,
+				90F7B24A2296FFC500580563 /* controllers */,
+			);
+			path = "Weather Forecasting";
+			sourceTree = "<group>";
+		};
+		90F7B24A2296FFC500580563 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B25822972D5800580563 /* Forecasting */,
+				90F7B25322972D2100580563 /* HeaderCell */,
+				90F7B25B229734EE00580563 /* Today */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		90F7B24B2296FFD400580563 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B2442296FFA200580563 /* Info.plist */,
+				90F7B29022973BFF00580563 /* Weather Forecasting-Bridging-Header.h */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		90F7B24C2296FFE700580563 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B23C2296FFA000580563 /* Main.storyboard */,
+				90F7B2412296FFA200580563 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90F7B24D2296FFEE00580563 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B23F2296FFA200580563 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		90F7B24E2297002500580563 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B2382296FFA000580563 /* AppDelegate.swift */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		90F7B25322972D2100580563 /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B25522972D3000580563 /* headerViewTableViewCell.swift */,
+				90F7B25422972D3000580563 /* headerViewTableViewCell.xib */,
+			);
+			path = HeaderCell;
+			sourceTree = "<group>";
+		};
+		90F7B25822972D5800580563 /* Forecasting */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B25922972D7C00580563 /* ForeCastingController.swift */,
+			);
+			path = Forecasting;
+			sourceTree = "<group>";
+		};
+		90F7B25B229734EE00580563 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B23A2296FFA000580563 /* TodayController.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		90F7B25C2297379300580563 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B25D229737B700580563 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		90F7B25F22973ACC00580563 /* DBProvider */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B26022973ADE00580563 /* DBProvider.swift */,
+			);
+			path = DBProvider;
+			sourceTree = "<group>";
+		};
+		90F7B26222973B7100580563 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B26322973B7100580563 /* WebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		90F7B26522973BA600580563 /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B26622973BA600580563 /* JKNotification */,
+				90F7B27222973BA600580563 /* KVNProgress */,
+			);
+			path = Spinner;
+			sourceTree = "<group>";
+		};
+		90F7B26622973BA600580563 /* JKNotification */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B26722973BA600580563 /* Classes */,
+				90F7B26B22973BA600580563 /* Assets */,
+			);
+			path = JKNotification;
+			sourceTree = "<group>";
+		};
+		90F7B26722973BA600580563 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B26822973BA600580563 /* JKSubtitleView.swift */,
+				90F7B26922973BA600580563 /* JKNotificationPanel.swift */,
+				90F7B26A22973BA600580563 /* JKDefaultView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		90F7B26B22973BA600580563 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B26C22973BA600580563 /* success-icon@2x.png */,
+				90F7B26D22973BA600580563 /* success-icon@3x.png */,
+				90F7B26E22973BA600580563 /* warning-icon@2x.png */,
+				90F7B26F22973BA600580563 /* warning-icon@3x.png */,
+				90F7B27022973BA600580563 /* fail-icon@3x.png */,
+				90F7B27122973BA600580563 /* fail-icon@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		90F7B27222973BA600580563 /* KVNProgress */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B27322973BA600580563 /* UIImage+KVNImageEffects.m */,
+				90F7B27422973BA600580563 /* UIImage+KVNEmpty.h */,
+				90F7B27522973BA600580563 /* UIColor+KVNContrast.h */,
+				90F7B27622973BA600580563 /* KVNProgress.m */,
+				90F7B27722973BA600580563 /* KVNProgressView.xib */,
+				90F7B27822973BA600580563 /* KVNProgressConfiguration.m */,
+				90F7B27922973BA600580563 /* KVNRotationViewController.m */,
+				90F7B27A22973BA600580563 /* UIImage+KVNEmpty.m */,
+				90F7B27B22973BA600580563 /* UIImage+KVNImageEffects.h */,
+				90F7B27C22973BA600580563 /* KVNProgress.h */,
+				90F7B27D22973BA600580563 /* UIColor+KVNContrast.m */,
+				90F7B27E22973BA600580563 /* KVNProgressConfiguration.h */,
+				90F7B27F22973BA600580563 /* KVNRotationViewController.h */,
+			);
+			path = KVNProgress;
+			sourceTree = "<group>";
+		};
+		90F7B291229741F100580563 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90F7B2922297420300580563 /* List.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90F7B2342296FFA000580563 /* Weather Forecasting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90F7B2472296FFA200580563 /* Build configuration list for PBXNativeTarget "Weather Forecasting" */;
+			buildPhases = (
+				90F7B2312296FFA000580563 /* Sources */,
+				90F7B2322296FFA000580563 /* Frameworks */,
+				90F7B2332296FFA000580563 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Weather Forecasting";
+			productName = "Weather Forecasting";
+			productReference = 90F7B2352296FFA000580563 /* Weather Forecasting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90F7B22D2296FFA000580563 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "MD ISHTIYAK";
+				TargetAttributes = {
+					90F7B2342296FFA000580563 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 90F7B2302296FFA000580563 /* Build configuration list for PBXProject "Weather Forecasting" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90F7B22C2296FFA000580563;
+			productRefGroup = 90F7B2362296FFA000580563 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90F7B2342296FFA000580563 /* Weather Forecasting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90F7B2332296FFA000580563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F7B25622972D3100580563 /* headerViewTableViewCell.xib in Resources */,
+				90F7B28322973BA600580563 /* success-icon@2x.png in Resources */,
+				90F7B2432296FFA200580563 /* LaunchScreen.storyboard in Resources */,
+				90F7B28522973BA600580563 /* warning-icon@2x.png in Resources */,
+				90F7B2402296FFA200580563 /* Assets.xcassets in Resources */,
+				90F7B28422973BA600580563 /* success-icon@3x.png in Resources */,
+				90F7B23E2296FFA000580563 /* Main.storyboard in Resources */,
+				90F7B28722973BA600580563 /* fail-icon@3x.png in Resources */,
+				90F7B28622973BA600580563 /* warning-icon@3x.png in Resources */,
+				90F7B28822973BA600580563 /* fail-icon@2x.png in Resources */,
+				90F7B28B22973BA600580563 /* KVNProgressView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90F7B2312296FFA000580563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F7B28D22973BA600580563 /* KVNRotationViewController.m in Sources */,
+				90F7B25722972D3100580563 /* headerViewTableViewCell.swift in Sources */,
+				90F7B28922973BA600580563 /* UIImage+KVNImageEffects.m in Sources */,
+				90F7B23B2296FFA000580563 /* TodayController.swift in Sources */,
+				90F7B26422973B7100580563 /* WebService.swift in Sources */,
+				90F7B28F22973BA600580563 /* UIColor+KVNContrast.m in Sources */,
+				90F7B28022973BA600580563 /* JKSubtitleView.swift in Sources */,
+				90F7B25E229737B700580563 /* Constant.swift in Sources */,
+				90F7B28222973BA600580563 /* JKDefaultView.swift in Sources */,
+				90F7B2392296FFA000580563 /* AppDelegate.swift in Sources */,
+				90F7B28C22973BA600580563 /* KVNProgressConfiguration.m in Sources */,
+				90F7B28A22973BA600580563 /* KVNProgress.m in Sources */,
+				90F7B28122973BA600580563 /* JKNotificationPanel.swift in Sources */,
+				90F7B28E22973BA600580563 /* UIImage+KVNEmpty.m in Sources */,
+				90F7B2932297420300580563 /* List.swift in Sources */,
+				90F7B26122973ADE00580563 /* DBProvider.swift in Sources */,
+				90F7B25A22972D7C00580563 /* ForeCastingController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		90F7B23C2296FFA000580563 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90F7B23D2296FFA000580563 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90F7B2412296FFA200580563 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90F7B2422296FFA200580563 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90F7B2452296FFA200580563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		90F7B2462296FFA200580563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90F7B2482296FFA200580563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YB2WUFR3Q4;
+				INFOPLIST_FILE = "Weather Forecasting/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weatherForecasting.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Weather Forecasting/SupportingFiles/Weather Forecasting-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90F7B2492296FFA200580563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YB2WUFR3Q4;
+				INFOPLIST_FILE = "Weather Forecasting/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weatherForecasting.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Weather Forecasting/SupportingFiles/Weather Forecasting-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90F7B2302296FFA000580563 /* Build configuration list for PBXProject "Weather Forecasting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90F7B2452296FFA200580563 /* Debug */,
+				90F7B2462296FFA200580563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90F7B2472296FFA200580563 /* Build configuration list for PBXNativeTarget "Weather Forecasting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90F7B2482296FFA200580563 /* Debug */,
+				90F7B2492296FFA200580563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90F7B22D2296FFA000580563 /* Project object */;
+}
